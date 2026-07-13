@@ -1,9 +1,8 @@
 name: Temporary UCI Arrhythmia Download
 
 on:
-  push:
-    paths:
-      - '.github/workflows/tmp-uci-arrhythmia-download.yml'
+  pull_request:
+  workflow_dispatch:
 
 permissions:
   contents: read
